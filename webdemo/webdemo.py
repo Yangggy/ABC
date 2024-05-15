@@ -162,7 +162,7 @@ def main(
 
     with gr.Blocks() as demo:
         gr.Markdown(
-            "# 云起无垠SecGPT模型RLHF测试\n\nHuggingface: https://huggingface.co/w8ay/secgpt\nGithub: https://github.com/Clouditera/secgpt")
+            "# 模型RLHF测试\n\nHuggingface: https://huggingface.co/w8ay/secgpt\nGithub: https://github.com/Clouditera/secgpt")
         with gr.Row():
             with gr.Column():  # 列排列
                 context = gr.Textbox(
@@ -220,7 +220,7 @@ def main(
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description='云起无垠SecGPT模型RLHF测试')
+    parser = argparse.ArgumentParser(description='模型RLHF测试')
     parser.add_argument("--base_model", type=str, required=True, help="基础模型")
     parser.add_argument("--lora", type=str, help="lora模型")
     parser.add_argument("--share_gradio", type=bool, default=False, help="开放外网访问")
