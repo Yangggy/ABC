@@ -162,7 +162,7 @@ def main(
 
     with gr.Blocks() as demo:
         gr.Markdown(
-            "# 模型RLHF测试\n\nHuggingface: https://huggingface.co/w8ay/secgpt\nGithub: https://github.com/Clouditera/secgpt")
+            "# 模型RLHF测试\n\n")
         with gr.Row():
             with gr.Column():  # 列排列
                 context = gr.Textbox(
